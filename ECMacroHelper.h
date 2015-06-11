@@ -6,8 +6,10 @@
 //  Copyright (c) 2015年 Eric. All rights reserved.
 //
 
-#ifndef MacroDemo_ECMacroHelper_h
-#define MacroDemo_ECMacroHelper_h
+#ifndef ECMacroHelper_h
+#define ECMacroHelper_h
+
+#define DefineWeakSelf __weak __typeof(self) weakSelf = self
 
 #pragma mark - NSLog
 
@@ -16,9 +18,6 @@
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
-
-#define DefineWeakSelf __weak __typeof(self) weakSelf = self
-
 
 #pragma mark - UIColor
 
